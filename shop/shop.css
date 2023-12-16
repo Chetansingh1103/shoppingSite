@@ -53,14 +53,14 @@
     background: black;
     color: white;
     position: fixed;
-    top: 8.1%;
+    top: 79px;
+    height: 100vh;
 }
 
 .colors,.sizes{
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 6%;
 }
 
 .colors label, .sizes label, .rating label, .price-range label{
@@ -71,8 +71,8 @@
 
 .rating{
     width: 125px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 6%;
+    margin-bottom: 5%;
 }
 
 .slider{
@@ -93,8 +93,8 @@
     display: flex;
     flex-direction: column;
     width: 300px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 6%;
+    margin-bottom: 2%;
 }
 
 .colors-select, .sizes-select,.price-select{
@@ -111,7 +111,7 @@
     color: white;
     width: 160px;
     height: 40px;
-    margin-bottom: 25px;
+    margin-bottom: 4%;
     margin-left: 15px;
     font-size: 16px;
     font-weight: 300;
@@ -149,7 +149,7 @@
     justify-content: center;
     width: 76%;
     position: fixed;
-    top: 10%;
+    top: 100px;
 }
 
 .search-container .search-bar{

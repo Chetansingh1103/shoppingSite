@@ -94,7 +94,7 @@ logoutHeader.addEventListener("click", () => {
     location.reload();
     let linkItem = document.createElement("a");
     linkItem.href =
-      "http://127.0.0.1:5500/JavascriptAdvance/projects/shopping-cart/index.html";
+      "/index.html";
     linkItem.click();
 })
 
@@ -104,7 +104,7 @@ logoutButton.addEventListener("click", () => {
     location.reload();
     let linkItem = document.createElement("a");
     linkItem.href =
-      "http://127.0.0.1:5500/JavascriptAdvance/projects/shopping-cart/index.html";
+      "/index.html";
     linkItem.click();
 })
 

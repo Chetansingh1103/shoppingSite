@@ -7,14 +7,14 @@ const profile = document.getElementById("profile")
 headerHeading.addEventListener("click", () => {
   let linkItem = document.createElement("a");
   linkItem.href =
-    "http://127.0.0.1:5500/JavascriptAdvance/projects/shopping-cart/index.html";
+    "/index.html";
   linkItem.click();
 })
 
 loginButton.addEventListener("click", () => {
   let linkItem = document.createElement("a");
   linkItem.href =
-    "http://127.0.0.1:5500/JavascriptAdvance/projects/shopping-cart/login/login.html";
+    "/login/login.html";
   linkItem.click();
 
 })
@@ -22,7 +22,7 @@ loginButton.addEventListener("click", () => {
 signupButton.addEventListener("click", () => {
     let linkItem = document.createElement("a");
     linkItem.href =
-      "http://127.0.0.1:5500/JavascriptAdvance/projects/shopping-cart/signup/signup.html";
+      "/signup/signup.html";
     linkItem.click();
 
 })
@@ -99,7 +99,7 @@ window.onload = function() {
 
       let linkItem = document.createElement("a");
       linkItem.href =
-        "http://127.0.0.1:5500/JavascriptAdvance/projects/shopping-cart/shop/shop.html";
+        "/shop/shop.html";
       linkItem.click();    
 
     })

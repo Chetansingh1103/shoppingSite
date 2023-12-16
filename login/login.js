@@ -45,7 +45,7 @@ loginButton.addEventListener("click", () => {
                 setTimeout(() => {
                     // redirecting to the shoping page
                     let linkItem = document.createElement("a");
-                    linkItem.href ="http://127.0.0.1:5500/JavascriptAdvance/projects/shopping-cart/shop/shop.html";
+                    linkItem.href ="/shop/shop.html";
                     linkItem.click();
                 },1000);
 

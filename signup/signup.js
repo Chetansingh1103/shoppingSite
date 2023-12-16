@@ -5,7 +5,7 @@ const currentPage = document.getElementById("current-page");
 headerHeading.addEventListener("click", () => {
     let linkItem = document.createElement("a");
     linkItem.href =
-      "http://127.0.0.1:5500/JavascriptAdvance/projects/shopping-cart/index.html";
+      "/index.html";
     linkItem.click();
   })
 
@@ -86,7 +86,7 @@ signupButton.addEventListener("click", () => {
                 // redirecting to the login page
                 let linkItem = document.createElement("a");
                 linkItem.href =
-                  "http://127.0.0.1:5500/JavascriptAdvance/projects/shopping-cart/login/login.html";
+                  "/login/login.html";
                 linkItem.click();
     
             }else{
