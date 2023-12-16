@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="header-left">
+            <h1 id="header-heading">MeShop</h1>
+            <div class="show-current-page">
+                <h2 id="current-page"></h2>
+            </div> 
+        </div>
+        <div class="header-right">
+            <a href="http://127.0.0.1:5500/JavascriptAdvance/projects/shopping-cart/index.html" onclick="setCurrentPage('Home')" >Home</a>
+            <a href="http://127.0.0.1:5500/JavascriptAdvance/projects/shopping-cart/login/login.html" onclick="setCurrentPage('Login')" >Login</a> 
+        </div>
+    </div>
+
+    <div class="signup-container">
+        <h1>Signup</h1>
+        <div class="input-values">
+            <input type="text" placeholder="First Name" id="first-name" required>
+        </div>
+        <div class="input-values">
+            <input type="text" placeholder="Last Name" id="last-name" required>
+        </div>
+        <div class="input-values">
+            <input type="email" placeholder="Email" id="email" required>
+        </div>
+        <div class="input-values">
+            <input type="password" placeholder="Password" id="password" required>
+        </div>
+        <div class="input-values">
+            <input type="password" placeholder="Confirm Password" id="confirm-password" required>
+        </div>
+        <p id="signup-success" class="success-message"></p>
+        <p id="signup-error" class="error-message"></p>
+        <button id="signup-button">Create Your Account</button>
+    </div>
+    
+    <script src="signup.js"></script>
+</body>
+</html>

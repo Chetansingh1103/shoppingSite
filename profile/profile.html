@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="header-left">
+            <h1 id="header-heading">MeShop</h1>
+            <div class="show-current-page">
+                <h2 id="current-page"></h2>
+            </div> 
+        </div>
+        <div class="header-right">
+            <a href="#cart" id="cart"></a>
+            <a href="http://127.0.0.1:5500/JavascriptAdvance/projects/shopping-cart/index.html">Home</a>
+            <a href="http://127.0.0.1:5500/JavascriptAdvance/projects/shopping-cart/cart/cart.html" id="cart">My Cart</a>
+            <a href="http://127.0.0.1:5500/JavascriptAdvance/projects/shopping-cart/shop/shop.html">Shop Now</a>
+            <a href="http://127.0.0.1:5500/JavascriptAdvance/projects/shopping-cart/index.html" id="logout">Logout</a>
+        </div>
+    </div>
+
+    <div class="profile-container">
+        <div class="myprofile">
+            <h1>My Profile</h1>
+            <input type="text" id="first-name">
+            <input type="text" id="last-name">
+            <p id="success-message1" class="success-message"></p>
+            <p id="error-message1" class="error-message"></p>
+            <button class="update-name" id="update-name">Save Info</button>
+        </div>
+        <div class="mypassword">
+            <h1>Edit Password</h1>
+            <input type="text" id="old-password">
+            <input type="password" id="new-password" placeholder="New Password">
+            <input type="password" id="confirm-new-password" placeholder="Confirm New Password">
+            <p id="success-message2" class="success-message"></p>
+            <p id="error-message2" class="error-message"></p>
+            <button class="update-password" id="update-password">Change Password</button>
+        </div>
+        <button class="logout-button" id="logout-button">Logout</button>
+    </div>
+    
+    <script src="profile.js"></script>
+</body>
+</html>

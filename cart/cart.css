@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    padding: 20px;
+}
+
+.header-right > a{
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+}
+
+.header-right > a:hover{
+    color: rgb(194, 194, 194);
+}
+
+.show-current-page{
+    color: white;
+    margin-left: 10px;
+    margin-top: 6px;
+}
+
+.header-left{
+    display: flex;
+}
+
+.cart-heading{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.cart-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-container-left{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-container-right{
+    display: flex;
+    flex-direction: column;
+    background: black;
+    color: white;
+    width: 500px;
+    align-items: center;
+    height: fit-content;
+    padding: 20px;
+    margin: 20px;
+    justify-content: space-around;
+}
+
+.checkout-list{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  
+}
+
+.checkout-list-item{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    width: 95%;
+    align-items: center;
+}
+
+
+.checkout-list-item-title{
+    width: 60%;
+}
+
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    width: 88%;
+    font-size: 22px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 2px solid white;
+    border-left: black;
+    border-right: black;
+}
+
+.buy-btn{
+    background: white;
+    color: black;
+    padding: 10px;
+    margin: 20px;
+    width: 200px;
+    font-size: 20px;
+}
+
+.buy-btn:hover{
+    background: black;
+    color: white;
+    transition: .4s;
+    box-shadow: 0px 0px 2px 2px white;
+}
+
+
+
+.item{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: fit-content;
+    margin: 25px;
+    border: 1px solid black;
+}
+
+.item img{
+    width: 300px;
+    height: 340px;
+    margin-bottom: 15px;
+    align-self: center; 
+}
+
+.item .title p{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 15px;
+}
+
+.item-price, .item-size, .item-colors-container, .item-rating{
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.item-colors-container{
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.item-colors-container .item-colors{
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.red{
+    border: 7px solid red;
+    font-size: 0px;
+    border-radius: 10px;
+    margin-left: 7px;
+    box-shadow: 0px 0px 2px 2px black;
+}
+
+.blue{
+    border: 7px solid blue;
+    font-size: 0px;
+    border-radius: 10px;
+    margin-left: 7px;
+    box-shadow: 0px 0px 2px 2px black;
+}
+
+.green{
+    border: 7px solid green;
+    font-size: 0px;
+    border-radius: 10px;
+    margin-left: 7px;
+    box-shadow: 0px 0px 2px 2px black;
+}
+
+.black{
+    border: 7px solid black;
+    font-size: 0px;
+    border-radius: 10px;
+    margin-left: 7px;
+    box-shadow: 0px 0px 2px 2px black;
+}
+
+.white{
+    border: 7px solid white;
+    font-size: 0px;
+    border-radius: 10px;
+    margin-left: 7px;
+    box-shadow: 0px 0px 2px 2px black;
+}
+
+.item-rating{
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.item-rating .item-stars{
+    margin-left: 20px;
+}
+
+.item-stars .star{
+    color: #FFD951;
+    font-size: 20px;
+    margin-left: -2px;
+}
+
+.remove-from-cart-btn{
+    height: 55px;
+    font-size: 20px;
+    background: black;
+    color: white; 
+}
+
+.remove-from-cart-btn:hover{
+    background: white;
+    color: black;
+    transition: .4s;
+    box-shadow: 0px 0px 2px 2px black;
+}
+
+.remove-from-cart-btn:active{
+    background: black;
+    color: white; 
+    font-size: 22px;
+    color: gray;
+    border: 2px solid gray;
+    transition: .2s;
+}

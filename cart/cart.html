@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cart.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+
+    <div class="header">
+        <div class="header-left">
+            <h1 id="header-heading">MeShop</h1>
+            <div class="show-current-page">
+                <h2 id="current-page"></h2>
+            </div> 
+        </div>
+        <div class="header-right">
+            
+            <a href="http://127.0.0.1:5500/JavascriptAdvance/projects/shopping-cart/login/login.html" id="login" onclick="setCurrentPage('Login')" >Login</a>
+            <a href="http://127.0.0.1:5500/JavascriptAdvance/projects/shopping-cart/signup/signup.html" id="signup" onclick="setCurrentPage('SignUp')">SignUp</a>
+            <a href="http://127.0.0.1:5500/JavascriptAdvance/projects/shopping-cart/index.html" onclick="setCurrentPage('Home')">Home</a>
+            <a href="http://127.0.0.1:5500/JavascriptAdvance/projects/shopping-cart/shop/shop.html" onclick="setCurrentPage('Shop Now')">Shop Now</a> 
+            <a href="http://127.0.0.1:5500/JavascriptAdvance/projects/shopping-cart/profile/profile.html" id="profile">Profile</a>
+            <a href="http://127.0.0.1:5500/JavascriptAdvance/projects/shopping-cart/index.html" id="logout">Logout</a>
+        </div>
+    </div>
+    <div class="cart-heading">
+        <h1>My Cart</h1>
+    </div>
+    <div class="cart-container">
+        <div class="cart-container-left">
+            <!-- <div class="item">
+                <img src="https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg" alt="item image">
+                <div class="title">
+                <p>dfgsdsdfsdsdfgsghsgsgsdfg</p>
+                </div>
+                <div class="item-price-and-size">
+                    <p class="item-price"><b>Price:</b> ₹3455</p>
+                    <p class="item-size"><b>Sizes:</b> S,M,L,XL</p>
+                </div>
+                <div class="item-colors-container">
+                    <h4>Colors :</h4> 
+                </div>
+                <div class="item-rating">
+                    <h4>Rating :</h4>
+                </div>
+                <button class="remove-from-cart-btn">Remove From Cart</button>
+            </div> -->
+        </div>
+        <div class="cart-container-right">
+            <!-- <div class="checkout-list">
+                <div class="checkout-list-item">
+                    <p class="checkout-list-item-title"></p>
+                    <p class="checkout-list-item-price"></p>
+                </div>
+            </div>
+            <div class="total">
+                <h3>Total :</h3>
+                <h3 class="total-price">Rs 900/-</h3>
+            </div>
+            <button class="buy-btn" >Click to Checkout</button> -->
+        </div>
+    </div>
+    
+    <script src="cart.js"></script>
+</body>
+</html>

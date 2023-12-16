@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop With Us....</title>
+    <link rel="stylesheet" href="shop.css">
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="header">
+        <div class="header-left">
+            <h1 id="header-heading">MeShop</h1>
+            <div class="show-current-page">
+                <h2 id="current-page"></h2>
+            </div> 
+        </div>
+        <div class="header-right">
+            
+            <a href="http://127.0.0.1:5500/JavascriptAdvance/projects/shopping-cart/login/login.html" id="login" onclick="setCurrentPage('Login')" >Login</a>
+            <a href="http://127.0.0.1:5500/JavascriptAdvance/projects/shopping-cart/signup/signup.html" id="signup" onclick="setCurrentPage('SignUp')">SignUp</a>
+            <a href="http://127.0.0.1:5500/JavascriptAdvance/projects/shopping-cart/index.html" onclick="setCurrentPage('Home')">Home</a>
+            <a href="http://127.0.0.1:5500/JavascriptAdvance/projects/shopping-cart/cart/cart.html" id="cart" onclick="setCurrentPage('My Cart')">My Cart<span id="cartItems"></span></a>
+            <a href="http://127.0.0.1:5500/JavascriptAdvance/projects/shopping-cart/profile/profile.html" id="profile">Profile</a>
+            <a href="http://127.0.0.1:5500/JavascriptAdvance/projects/shopping-cart/index.html" id="logout">Logout</a>
+        </div>
+    </div>
+    <div class="shop-container">
+        <div class="shop-container-left">
+            <hr>
+            <div class="colors">
+                <label for="colors" id="color">Colors :</label>
+                <div class="colors-select">
+                    <input type="radio" name="colors" value="red" onclick="getColor(this.value)"> 
+                    <p>Red</p>   
+                </div>
+                <div class="colors-select">
+                    <input type="radio" name="colors" value="blue" onclick="getColor(this.value)"> 
+                    <p>Blue</p>   
+                </div>
+                <div class="colors-select">
+                    <input type="radio" name="colors" value="green" onclick="getColor(this.value)"> 
+                    <p>Green</p>   
+                </div>
+                <div class="colors-select">
+                    <input type="radio" name="colors" value="black" onclick="getColor(this.value)"> 
+                    <p>Black</p>   
+                </div>
+                <div class="colors-select">
+                    <input type="radio" name="colors" value="white" onclick="getColor(this.value)"> 
+                    <p>White</p>   
+                </div> 
+            </div>
+            <hr>
+            <div class="sizes">
+                <label for="sizes">Sizes :</label>
+                <div class="sizes-select">
+                    <input type="radio" name="sizes" value="S" onclick="getSize(this.value)"> 
+                    <p>S</p>   
+                </div>
+                <div class="sizes-select">
+                    <input type="radio" name="sizes" value="M" onclick="getSize(this.value)"> 
+                    <p>M</p>   
+                </div> 
+                <div class="sizes-select">
+                    <input type="radio" name="sizes" value="L" onclick="getSize(this.value)"> 
+                    <p>L</p>   
+                </div> 
+                <div class="sizes-select">
+                    <input type="radio" name="sizes" value="XL" onclick="getSize(this.value)"> 
+                    <p>XL</p>   
+                </div>    
+            </div>
+            <hr>
+            <div class="rating">
+                <label for="rating">Rating :</label><br><br>
+                <input type="range" min="0" max="5" class="slider" id="myRange" name="rating" oninput="getRating(this.value)">
+                <div class="rating-numbers">
+                    <p>0</p>
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                </div>
+            </div>
+            <hr>
+            <div class="price-range">
+                <label for="price">Price Range :</label>
+                <div class="price-select">
+                    <input type="radio" name="price" value="0-2000" onclick="getPriceRange(this.value)">
+                    <p>₹0 - ₹2000</p>
+                </div>
+                <div class="price-select">
+                    <input type="radio" name="price" value="2000-5000" onclick="getPriceRange(this.value)">
+                    <p>₹2000 - ₹5000</p>
+                </div>
+                <div class="price-select">
+                    <input type="radio" name="price" value="5000-10000" onclick="getPriceRange(this.value)">
+                    <p>₹5000 - ₹10000</p>
+                </div>
+                <div class="price-select">
+                    <input type="radio" name="price" value="10000-10000000" onclick="getPriceRange(this.value)">
+                    <p>₹10000 onwards</p>
+                </div>
+            </div>
+            <button class="apply-filter" id="filter" onclick="searchApplyFilterProducts()">Apply Filter</button>
+        </div>
+        <div class="shop-container-right">
+            <div class="search-container">
+                <i class='bx bx-search-alt-2'></i>
+                <input type="search" placeholder="Search" id="searchInput" oninput="searchProducts()" class="search-bar">
+            </div>
+            <div class="suggestions-container">
+                <div class="clickable-suggestion" onclick="loadAllAndChangeColor(this)">
+                    <h3>All</h3>
+                </div>
+                <!-- <div class="clickable-suggestion">
+                    <h3>Mens</h3>
+                </div>
+                <div class="clickable-suggestion">
+                    <h3>Womens</h3>
+                </div>
+                <div class="clickable-suggestion">
+                    <h3>Jewellery</h3>
+                </div>
+                <div class="clickable-suggestion">
+                    <h3>Electronics</h3>
+                </div> -->
+            </div>
+            <div class="all-products">
+                <!-- <div class="category">
+                    <h2>Men's Clothing</h2>
+                    <div class="category-items">
+                        <div class="item">
+                            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="item image">
+                            <div class="title">
+                                <p>Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</p>
+                            </div>
+                            <div class="item-price-and-size">
+                                <p class="item-price">₹100</p>
+                                <p class="item-size">S,M,L,XL</p>
+                            </div>
+                            <div class="item-colors-container">
+                                <h4>Colors :</h4>
+                                <div class="item-colors">
+                                    <span class="red"></span>           
+                                    <span class="blue"></span>
+                                    <span class="green"></span>
+                                    <span class="black"></span>
+                                    <span class="white"></span>
+                                </div>  
+                            </div>
+                            <div class="item-rating">
+                                <h4>Rating :</h4>
+                                <div class="item-stars">
+                                    <span><i class='bx bxs-star star' ></i></span>
+                                    <span><i class='bx bxs-star star' ></i></span>
+                                    <span><i class='bx bxs-star star' ></i></span>
+                                </div>
+                            </div>
+                            <button class="add-to-cart-btn" id="add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="shop.js"></script>
+</body>
+</html>

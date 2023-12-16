@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeShop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="header-left">
+            <h1 id="header-heading">MeShop</h1>
+            <div class="show-current-page">
+                <h2 id="current-page"></h2>
+            </div> 
+        </div>
+        <div class="header-right">
+            <a href="http://127.0.0.1:5500/JavascriptAdvance/projects/shopping-cart/profile/profile.html" id="profile">Profile</a>
+            <a href="http://127.0.0.1:5500/JavascriptAdvance/projects/shopping-cart/shop/shop.html" onclick="setCurrentPage('Shop Now')">Shop Now</a>
+            <a href="http://127.0.0.1:5500/JavascriptAdvance/projects/shopping-cart/cart/cart.html" onclick="setCurrentPage('My Cart')">My Cart<span id="cartItems"></span></a>
+              
+        </div>
+    </div>
+    <div class="container">
+        <div class="container-left" id="container-left">
+            <h1>MeShop.</h1>
+            <p>Your First Shop Built on HTML, CSS AND Javascript</p>
+            <div class="buttons">
+                <button id="login-button" class="login-button">Login</button>
+                <button id="signup-button" class="signup-button">Signup</button>
+            </div>
+        </div>
+        <div class="container-right">
+            <img src="./images/landingPagePic.png" alt="pic">
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

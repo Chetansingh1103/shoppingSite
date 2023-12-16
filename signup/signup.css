@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    padding: 20px;
+}
+
+.header-right > a{
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+}
+
+.header-right > a:hover{
+    color: rgb(194, 194, 194);
+}
+
+.success-message{
+    color: greenyellow;
+    margin-left: 20px;
+}
+
+.error-message{
+    color: red;
+    margin-left: 20px;
+}
+
+.show-current-page{
+    color: white;
+    margin-left: 10px;
+    margin-top: 6px;
+}
+
+.header-left{
+    display: flex;
+}
+
+.signup-container{
+    display: flex;
+    flex-direction: column;
+    margin: 60px;
+}
+
+.signup-container h1{
+    margin: 17px;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.input-values{
+    margin: 10px;
+}
+
+.input-values input{
+    width: 100%;
+    margin: 7px;
+    height: 40px;
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+#signup-button{
+    width: 200px;
+    font-size: 18px;
+    height: 50px;
+    margin: 20px;
+    background: black;
+    color: white;
+}
+
+#signup-button:hover{
+    background: white;
+    color: black;
+    transition-duration: .4s;
+}
+
+
+
